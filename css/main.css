@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap");
+body {
+  margin: 0;
+  font-size: 'Montserrat';
+  background: #eeeeee;
+  font-size: 18px;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container .logo {
+  width: 120px;
+}
+
+.container h1 {
+  margin: 1em 0;
+}
+
+.container p {
+  line-height: 1.7rem;
+}
+
+.container .left {
+  background: linear-gradient(160deg, #601df7 0%, #8800ff 100%);
+  padding: 1em;
+}
+
+.container .left p, .container .left h1 {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-UA-compatible" content="ie=edge">
+    <title>let me know!</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+    <div class="proto-container">
+      <div class="proto"></div>
+      <div class="proto"></div>
+      <div class="proto"></div>
+      <div class="proto"></div>
+    </div>
+    <div class="container">
+      <div class="inner">
+        <div class="left">
+          <img src="images/logo.svg" alt="collaboration logo" class="logo">
+          <div class="content">
+            <h1>Join <span>Building a Team</span> </h1>
+            <p>Hey! There, it's Utkarsh, Web Designer, New Delhi, India.</p>
+           <p>I am searching for some freaky geeks with Good experience in web designing or UI/UX designing..</p>
+          </div>
+            </div>
+          
+            <div class="right">
+              <p>Get me notified if you want to join !</p>
+              <form action="mailto:yadavutkarsh207@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="your name:" placeholder="your Name">
+              <input type="text" name="email" id="email" placeholder="your email">
+              <button action="mailto:yadavutkarsh207@gmail.com">Notify Me</button>
+              <div class="attention">
+                <img src="images/me.jfif" alt="Utkarsh yadav avatar" class="me">
+                <img src="images/arrow.svg" alt="arrow pointing to email form" class="arrow">
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+<script>
+  let left= document.querySelector('.left');
+  let content= document.querySelector('.content');
+  let protos= document.querySelectorAll('.proto');
+
+  left.addEventListener('mousemove', (event) => {
+    let move = (event.clientX * 0.05) + 4;
+    let move2 = (event.clientX * 0.003);
+
+    content.style.transform = `translateX(-${move2}%)`;
+    protos.forEach((proto) => {
+      proto.style.transform = `translateX(${move}%)`;
+    })
+
+  })
+</script>
+
+  </body>
+</html>
